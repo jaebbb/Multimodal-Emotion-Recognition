@@ -1,6 +1,7 @@
 venv
-data
+data/*
 !data/*.yaml
+!data/*/*.md
 *.ipynb
 exer*.py
 checkpoints
