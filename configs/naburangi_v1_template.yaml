@@ -1,0 +1,31 @@
+agent: naburangi_v1
+device: "cuda:0"
+train:
+  train_run: true
+  epoch: 70
+  train_list_file: data/train_list.yaml
+  train_batch_size: 1
+  train_num_workers: 2
+val:
+  val_run: false
+  val_list_file: data/val_list.yml
+  val_batch_size: 32
+  val_interval: 1
+  val_num_workers: 1
+test:
+  test_run: false
+  test_list_file: data/test_list.yaml
+  test_batch_size: 32
+  test_num_workers: 1
+graph:
+  model:
+    max_seq_length: 80
+  optimizer:
+    learning_rate: 0.0001
+    beta1: 0.98
+    beta2: 0.998
+load_checkpoint: null
+s3d_pretrained_weight: pretrained_weights/S3D_kinetics400.pt
+face_s3d_pretrained_weight: pretrained_weights/S3D_kinetics400.pt
+save_checkpoint: checkpoints/naburangi
+summary_writer_dir: logs/naburangi
