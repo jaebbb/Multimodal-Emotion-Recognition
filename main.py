@@ -2,7 +2,6 @@
 import argparse
 from easydict import EasyDict
 
-from agents.naburangi_v1_agent import NaburangiV1Agent
 from utils.config import get_config
 
 
@@ -15,7 +14,8 @@ def main(config):
         config = EasyDict(config)
 
     if config.agent == 'naburangi_v1':
-        agent = NaburangiV1Avent(config)
+        from agents.naburangi_v1_agent import NaburangiV1Agent
+        agent = NaburangiV1Agent(config)
 
     agent.run()
     agent.finalize()

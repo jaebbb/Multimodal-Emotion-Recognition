@@ -5,6 +5,7 @@ data/*
 *.ipynb
 exer*.py
 checkpoints
+logs
 
 # Created by https://www.gitignore.io/api/python,jupyternotebooks,visualstudiocode
 # Edit at https://www.gitignore.io/?templates=python,jupyternotebooks,visualstudiocode
