@@ -1,1 +1,8 @@
-trainset 609
+trainset   609
+         ㄴAngry 
+         ㄴDisgust
+         ㄴFear
+         ㄴHappy
+         ㄴNeutral
+         ㄴSad
+         ㄴSurprise
