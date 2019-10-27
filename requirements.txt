@@ -1,0 +1,12 @@
+easydict>=1.9,<2.0
+numpy>=1.16,<2.0
+opencv-python>=4.1.0,<5.0
+torchvision>=0.3
+av>=6.2.0,<7.0
+matplotlib>=3.1.0,<4.0
+torch>=1.2,<2.0
+
+autopep8>=1.4.4,<2.0
+tensorboard>=2.0,<3.0
+future==0.11.1
+pyyaml>=5.1.2,<6.0

@@ -1,0 +1,30 @@
+agent: naburangi_v1
+device: "cuda:0"
+train:
+  epoch: 70
+  train_list_file: data/train_list.yaml
+  train_batch_size: 32
+val:
+  val_list_file: data/val_list.yaml
+  val_batch_size: 32
+  val_interval: 1
+test:
+  test_list_file: data/test_list.yaml
+  test_batch_size: 32
+graph:
+  model:
+    encoder_d_model: 512
+    decoder_d_model: 512
+    num_heads: 8
+    encoder_num_layers: 2
+    decoder_num_layers: 4
+    dff: 2048
+    dropout: 0.1
+    max_seq_length: 80
+  optimizer:
+    learning_rate: 0.0001
+    beta1: 0.98
+    beta2: 0.998
+load_checkpoint: null
+save_checkpoint: checkpoints/naburangi
+summary_writer_dir: logs/naburangi
